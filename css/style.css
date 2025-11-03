@@ -1,0 +1,114 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+    --bg-color:  #f2ebe3 ;
+    --con-bg-color : #ffffff ;
+    --gray-color : #6c7289 ;
+    --black-color : #1c232b;
+    --light-green : #3c8067;
+    --dark-green :#1b4133 ;
+ 
+}
+body {
+    font-size: 14px;
+    background-color: var(--bg-color);
+}
+.container {
+    margin: 100px auto ;
+  background-color: var(--con-bg-color);
+  border-radius: 15px;
+  max-width: 550px;
+  /* display: flex;
+  justify-content: space-between;
+  align-items: center; */
+  display: grid;
+  grid-template-columns: repeat(2 , 1fr);
+  gap: 30px;
+  height: max-content;
+}
+
+.container .l-div {
+    background-image: url(../images/image-product-desktop.jpg);
+      background-repeat: no-repeat;
+  background-size: cover;
+    
+}
+.container .l-div img  {/*.container .l-div*/
+width: 100%;
+border-radius: 15px 0 0 15px;
+
+}
+.container .r-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 20px;
+    align-items: normal;
+    padding: 20px 20px 20px 0;
+}
+.container .r-div h3 {
+    color: var(--gray-color);
+    letter-spacing: 5px;
+    text-transform: uppercase;
+font-family: monospace;
+    font-weight: 300;
+    font-size: 16px;  
+}
+.container .r-div .content .special {
+       font-size: 25px;
+    font-family: fantasy;
+     display: block;
+     width: 70%;
+    color: var(--black-color);
+    letter-spacing: 1px;
+}
+.container .r-div .content p {
+    color: var(--gray-color);
+    margin: 10px 0 ;
+width: 100%;
+    font-family: system-ui;
+}
+.container .r-div .price {
+    display: flex;
+    /* justify-content: space-between; */
+    align-items: center;
+    gap: 20px;
+}
+.container .r-div .price span {
+    color: var(--light-green);
+    font-size: 25px;
+    font-family: cursive;
+    font-weight: bold;
+}
+.container .r-div .price p {
+    text-decoration: line-through;
+    color: var(--gray-color);
+    font-size: 15px;
+}
+.container .r-div .btn {
+    position: relative;
+    text-align: center;
+}
+.container .r-div .btn button {
+    background-color: var(--light-green);
+    padding: 10px 30px;
+    width: 100%;
+    border: none;
+    color: #fff;
+    position: relative;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: ease 0.5s;
+}
+
+.container .r-div .btn button:active {
+   background-color: var(--dark-green);
+}
+.container .r-div .btn img {
+
+    position: absolute;
+    left: 34px;
+}
